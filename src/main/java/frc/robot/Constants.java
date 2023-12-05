@@ -51,6 +51,8 @@ public final class Constants {
 
         //A boolean to control the inversion of the direction of the motor gievn a positive value
         //Positive values muest result in a counter-clockwise movment
+        //Note: if you are using the Mk4i (Inverted) Swerve Modules, you may need to change this to "true"
+        //Hint: if there is a big oscillation when you turn, try inverting these.
         public static final boolean kFrontLeftTurningMotorReversed = false;
         public static final boolean kFrontRightTurningMotorReversed = false;
         public static final boolean kBackLeftTurningMotorReversed = false;
@@ -91,6 +93,7 @@ public final class Constants {
         // Robot turning speed
         public static final double kPhysicalMaxAngularSpeedRadiansPerSecond = 5 * Math.PI;
 
+        // If you want to slow down the robot during TeleOp, adjust these values
         public static final double kTeleDriveMaxSpeedMetersPerSecond = kPhysicalMaxSpeedMetersPerSecond;
         public static final double kTeleDriveMaxAngularSpeedRadiansPerSecond = kPhysicalMaxAngularSpeedRadiansPerSecond / 4;  // Slowed down for testing
         public static final double kTeleDriveMaxAccelerationUnitsPerSecond = 3;
@@ -98,6 +101,7 @@ public final class Constants {
     }
 
     public static final class AutoConstants {
+        // If you want to slow down the robot during Autonomous, adjust these values
         public static final double kMaxSpeedMetersPerSecond = DriveConstants.kPhysicalMaxSpeedMetersPerSecond /2; 
         public static final double kMaxAngularSpeedRadiansPerSecond = DriveConstants.kPhysicalMaxAngularSpeedRadiansPerSecond / 2;
         public static final double kMaxAccelerationMetersPerSecondSquared = 3;

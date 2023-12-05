@@ -86,8 +86,8 @@ public class SwerveModule {
     }
 
     public double getTurningPosition() {
-        // TODO: Verify that we want to use the CANCoder for turning position
-        return turningEncoder.getPosition();
+        // Use the CANCoder for turning position
+        return getAbsoluteEncoderRad();
     }
 
     public double getDriveVelocity() {
