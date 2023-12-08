@@ -132,6 +132,9 @@ public final class Constants {
         public static final int kDriverFieldOrientedButtonIdx = 5;
         // Button used to enable slow turning
         public static final int kDriverSlowTurnButtonIdx=1;
+        // Button used to reset the gyro to 0
+        public static final int kDriverResetGyroButtonIdx=2;
+
 
     }
 }
